@@ -9,8 +9,8 @@ bot.on("message",function(msg){
     bot.sendMessage(chatId,`Salom -> ${text}`);
 
     console.log(msg);
-    console.log("*******");
-    console.log(chatId,text);
+    // console.log("*******");
+    // console.log(chatId,text);
 })
 
 
