@@ -6,7 +6,7 @@ bot.on("message",function(msg){
     const chatId = msg.chat.id;
     const text = msg.text;
 
-    bot.sendMessage(chatId,`Salom -> ${text}`);
+    bot.sendMessage(chatId,`Salom`);
 
     console.log(msg);
     // console.log("*******");
