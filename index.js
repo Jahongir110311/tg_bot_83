@@ -5,18 +5,22 @@ const bot = new TelegramBot(TOKEN, { polling: true })
 bot.on("message",function(msg){
     const chatId = msg.chat.id;
     const text = msg.text;
+    const firstname = msg.chat.first_name;
 
-    bot.sendMessage(chatId,`Salom`);
+
+    bot.sendMessage(chatId,`Xush kelibsiz!, ${firstname}` , {
+        reply_markup: {
+            keyboard: [
+                [{text: "Boshlash 🔥"}],
+                [{text: "Menu 🫡"},{text: "Sozlamalar ⚙️"}]
+            ]
+        },
+        resize_keyboard: true,
+    });
+
 
     console.log(msg);
-    // console.log("*******");
-    // console.log(chatId,text);
 })
-
-
-
-
-
 
 
 console.log("Bot ishga tushdi...");
