@@ -13,9 +13,9 @@ bot.on("message",function(msg){
             keyboard: [
                 [{text: "Boshlash 🔥"}],
                 [{text: "Menu 🫡"},{text: "Sozlamalar ⚙️"}]
-            ]
+            ],
+            resize_keyboard: true,
         },
-        resize_keyboard: true,
     });
 
 
