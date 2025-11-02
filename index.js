@@ -6,7 +6,7 @@ bot.on("message", async function (msg) {
   const chatId = msg.chat.id;
   const text = msg.text;
   const firstname = msg.chat.first_name;
-  const menuPhoto = "./assets/images/2.webp";
+  const menuPhoto = "./assets/images/1.webp";
 
   if (text == "/start") {
     bot.sendMessage(chatId, `Xush kelibsiz, ${firstname}`, {
